@@ -7,7 +7,15 @@ const Level = props => {
             <div className="level">
                 {props.level.map(pair => (<Pair pair={pair} levelNumber={props.levelNumber} />))}
             </div>
-            <div class="level-connector"></div>
+            {props.levelNumber !== 3 && props.nextLevelCount > 1 &&
+                <div
+                    className="level-connector"
+                    style={{
+                        width: (props.nextLevelCount / 2) * // nodes on the next level
+                        260
+                    }}
+                >
+                </div>}
         </>
     );
 }

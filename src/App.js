@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <>
-      <div class="header">
+      <div className="header">
         <button onClick={() => setTest(test + 1)}>test</button>
       </div>
       <Tree />

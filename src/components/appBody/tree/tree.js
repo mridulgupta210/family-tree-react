@@ -5,10 +5,16 @@ import { getDataById } from '../../../utilities/mockApi';
 const Tree = () => {
     const data = getDataById();
     console.log(data);
-    
+
     return (
         <div className="tree-container">
-            {data.map((level, index) => (<Level level={level} levelNumber={index} />))}
+            {data.map((level, index) => (
+                <Level
+                    level={level}
+                    levelNumber={index}
+                    nextLevelCount={index < 3 ? data[index + 1].length : 0}
+                />
+            ))}
         </div>
     );
 }
