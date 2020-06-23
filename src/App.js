@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import Tree from './components/appBody/tree/tree';
 
-function App() {
+const App = () => {
+  const [test, setTest] = useState(1);
+
+  useEffect(() => {
+    console.log(test);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      console.log(test);
+    }
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div class="header">
+        <button onClick={() => setTest(test + 1)}>test</button>
+      </div>
+      <Tree />
+    </>
   );
 }
 
