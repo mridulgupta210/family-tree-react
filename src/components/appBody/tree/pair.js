@@ -7,12 +7,12 @@ const Pair = props => {
 
     return (
         <div className="pair-group">
-            {props.levelNumber !== 0 && <div className="pair-connector"></div>}
+            {props.levelNumber !== 0 && <div className="pair-connector" />}
             <div className="pair">
                 <Node element={firstNode} />
                 <Node element={secondNode} />
             </div>
-            {props.levelNumber !== 3 && <div className="pair-connector"></div>}
+            {props.levelNumber !== 3 && <div className="pair-connector" />}
         </div>
     );
 }

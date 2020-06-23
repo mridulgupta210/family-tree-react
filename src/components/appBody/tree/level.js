@@ -17,8 +17,7 @@ const Level = props => {
                 <div
                     className="level-connector"
                     style={{ width: props.nextLevelCount * 50 }}
-                >
-                </div>}
+                />}
         </>
     );
 }
