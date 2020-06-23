@@ -10,6 +10,7 @@ const Tree = () => {
         <div className="tree-container">
             {data.map((level, index) => (
                 <Level
+                    key={index}
                     level={level}
                     levelNumber={index}
                     nextLevelCount={index < 3 ? data[index + 1].length : 0}
