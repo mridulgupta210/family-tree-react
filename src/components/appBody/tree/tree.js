@@ -3,7 +3,7 @@ import Level from './level';
 import { getDataById } from '../../../utilities/mockApi';
 
 const Tree = () => {
-    const data = getDataById();
+    const data = getDataById(5);
     console.log(data);
 
     return (
