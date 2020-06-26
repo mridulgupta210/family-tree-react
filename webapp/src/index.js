@@ -1,6 +1,6 @@
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './common/serviceWorker';
 import App from './App';
-import configureProvider from './store/configureProvider';
+import configureProvider from './common/store/configureProvider';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

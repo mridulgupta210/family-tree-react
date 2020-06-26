@@ -1,6 +1,6 @@
 import React from 'react';
 import Level from './level';
-import { getDataById } from '../../../utilities/mockApi';
+import { getDataById } from '../../common/utilities/mockApi';
 
 const Tree = () => {
     const data = getDataById();

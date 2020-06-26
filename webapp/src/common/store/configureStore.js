@@ -2,7 +2,7 @@ import { createLogger } from 'redux-logger';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import fetchMiddleware from '../middlewares/fetchMiddleware';
-import rootReducer from '../reducers/index';
+import rootReducer from '../../reducers/index';
 
 const configureStore = () => {
     let middlewares = [thunk, fetchMiddleware];

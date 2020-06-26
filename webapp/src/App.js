@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Tree from './components/appBody/tree/tree';
+import Tree from './appBody/tree/tree';
 
 const App = () => {
   return (

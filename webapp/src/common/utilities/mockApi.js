@@ -17,7 +17,7 @@ export const getDataById = (id = 1) => {
 
         return [x, x.spouse ? totalData.find(y => y.id === x.spouse) : null];
     }) : [[person, spouse]];
-    
+
     const children = person.children.length > 0 ?
         totalData
             .filter(x => person.children.includes(x.id))

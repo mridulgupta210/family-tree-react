@@ -18,6 +18,8 @@ html, body, #root {
 
 .level {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .level-connector {
